@@ -1,5 +1,7 @@
 This is an [Amazon SQS](http://aws.amazon.com/sqs/) backend for [delayed_job](http://github.com/collectiveidea/delayed_job)
 
+Yi Zhang
+
 # Getting Started
 
 ## Get credentials
