@@ -80,6 +80,7 @@ module Delayed
         end
 
         def fail!
+          puts "Job failed! #{@msg.inspect}\n With attributes #{@attributes.inspect}"
           destroy
           # v2: move to separate queue
         end
