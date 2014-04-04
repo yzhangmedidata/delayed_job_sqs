@@ -74,7 +74,7 @@ module Delayed
 
         def destroy
           if @msg
-            puts "job destroyed! #{@msg.id}"
+            puts "job destroyed! #{@msg.id}\n With attributes #{@attributes.inspect}"
             @msg.delete
           end
         end
