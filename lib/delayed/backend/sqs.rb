@@ -100,6 +100,10 @@ module Delayed
         def unlock(*args)
           true
         end
+        
+        def reschedule_at
+          self.class.db_time_now + (attempts ** 4) + 5
+        end
 
         def reload(*args)
           # reset
