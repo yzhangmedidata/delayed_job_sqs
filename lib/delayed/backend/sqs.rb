@@ -102,6 +102,8 @@ module Delayed
         end
         
         def reschedule_at
+          puts "Executing reschedule_at"
+          puts "db_time_now is #{self.class.db_time_now}"
           self.class.db_time_now + (attempts ** 4) + 5
         end
 
